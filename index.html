@@ -2,45 +2,91 @@
 <html>
 <head>
 <title>Khanh Linh Portfolio</title>
+
 <style>
 
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial;
 background:#f4f6fb;
+color:#333;
+}
+
+nav{
+background:#6C63FF;
+padding:15px;
 text-align:center;
 }
 
-header{
-background:#6C63FF;
+nav a{
 color:white;
-padding:60px;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+header{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(120deg,#6C63FF,#8EC5FC);
+color:white;
 }
 
 section{
-padding:40px;
+padding:50px;
+text-align:center;
 }
 
 .card{
 background:white;
+padding:25px;
 margin:20px auto;
-padding:20px;
 width:60%;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.projects{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.project-card{
+background:white;
+padding:20px;
+margin:15px;
+width:250px;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <header>
 <h1>Khanh Linh</h1>
-<p>Student | Learning Python | Exploring Data Analysis</p>
+<p>Student • Learning Python • Exploring Data Analysis</p>
 </header>
 
-<section>
+<section id="about">
 
 <div class="card">
 <h2>About Me</h2>
@@ -50,16 +96,34 @@ data analysis and technology.
 </p>
 </div>
 
-<div class="card">
-<h2>Skills</h2>
-<p>Python • SQL • Git • GitHub • Canva</p>
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Python Exercises</h3>
+<p>Programming practice and small algorithms.</p>
 </div>
 
-<div class="card">
-<h2>Projects</h2>
-<p>Python exercises</p>
-<p>Mini data analysis projects</p>
+<div class="project-card">
+<h3>Data Analysis</h3>
+<p>Exploring datasets and visualizing insights.</p>
 </div>
+
+<div class="project-card">
+<h3>Mini Projects</h3>
+<p>Small projects while learning programming.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
 
 <div class="card">
 <h2>Contact</h2>
@@ -68,6 +132,12 @@ data analysis and technology.
 </div>
 
 </section>
+
+<footer>
+
+<p>© 2026 Khanh Linh Portfolio</p>
+
+</footer>
 
 </body>
 </html>
